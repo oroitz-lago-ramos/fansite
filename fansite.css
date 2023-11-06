@@ -28,25 +28,45 @@ p {
     
 } */
 .background {
-  background-image: url("assets/images/backgrounds/sports-scuba_diving-diver-sunbeam-underwater-894274.jpeg");
+  /* background-image: url("assets/images/backgrounds/sports-scuba_diving-diver-sunbeam-underwater-894274.jpeg");
   background-size: cover;
   background-position: center;
-  height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  background-image: url('assets/images/backgrounds/sports-scuba_diving-diver-sunbeam-underwater-894274.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
 }
-
+#big-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
 #white-border {
   display: flex;
   justify-content: center;
   /* align-items: center; */
   border: 5px solid #fff;
   position: absolute;
-
+  z-index: 3;
   height: 95%;
   width: 95%;
 }
