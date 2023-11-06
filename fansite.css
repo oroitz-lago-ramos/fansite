@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "LostEmerald";
+  src: url("assets/fonts/Lost_Emerald.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* html {
+    overflow: hidden;
+} */
+/* body {
+    
+} */
+.background {
+  background-image: url("assets/images/backgrounds/sports-scuba_diving-diver-sunbeam-underwater-894274.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+#white-border {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 5px solid #fff;
+  position: absolute;
+
+  height: 95%;
+  width: 95%;
+}
+
+h1 {
+  font-family: "LostEmerald";
+  font-size: 3em;
+  color: #fff;
+  position: relative;
+  top: 3%;
+
+  text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2 rgb(0, 0, 0),
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
