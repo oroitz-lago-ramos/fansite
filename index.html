@@ -3,16 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="fansite.css" />
     <title>Diving into depths</title>
   </head>
   <body>
+
+    <!-- Background audio -->
+    <!-- <div id="sound-div">
+      <embed src="assets/audio/One Breath Around The World [TubeRipper.com].mp3" loop="true" autostart="true">
+    </div> -->
+   
+    <!-- <iframe src="assets/audio/One Breath Around The World [TubeRipper.com].mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <audio autoplay loop  id="playAudio">
+    <source src="audio/source.mp3"> -->
+
+  </audio>
     <div class="background">
       <div id="white-border">
-        <header></header>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+        </header>
 
         <h1>Diving into Depths</h1>
+        <div id="audio-controller">
+          <button id="pp-button" onClick="playPause()">
+            <audio
+              src="assets/audio/One Breath Around The World [TubeRipper.com].mp3"
+              autoplay
+              loop
+            ></audio>
+          <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

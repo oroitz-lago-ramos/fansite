@@ -21,6 +21,10 @@ p {
   margin: 0;
   padding: 0;
 }
+
+#sound-div {
+  display: none;
+}
 /* html {
     overflow: hidden;
 } */
@@ -42,13 +46,38 @@ p {
 
 #white-border {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   border: 5px solid #fff;
   position: absolute;
 
   height: 95%;
   width: 95%;
+}
+
+header nav {
+  background-color: transparent;
+  padding: 5%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color:#fff ;
+  font-weight: bold;
+  margin: 1vh 5vw;
+  padding: 5%;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+header nav ul li a:hover {
+  background-color: #fff;
+  border-radius: 15px;
+  color: #000000;
 }
 
 h1 {
@@ -60,4 +89,14 @@ h1 {
 
   text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2 rgb(0, 0, 0),
              1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+#audio-controller {
+  color: #fff;
+  display: flex;
+  gap: 30%;
+  margin: 2% 0;
+}
+#audio-controller button {
+  color: #fff;
 }
