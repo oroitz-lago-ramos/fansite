@@ -1,20 +1,20 @@
-//   Background audio
-// var isChrome =
-//   /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-// if (!isChrome) {
-//   $("#iframeAudio").remove();
-// } else {
-//   $("#playAudio").remove(); // just to make sure that it will not have 2x audio in the background
-// }
-var aud = document.getElementById("pp-button").children[0];
+var myAudio = document.getElementById("my-audio");
+var myButton = document.getElementById("pp-button");
 var isPlaying = false;
-aud.pause();
 
-function playPause() {
+function togglePlay() {
   if (isPlaying) {
-    aud.pause();
+    myAudio.pause();
+    myButton.innerHTML = "<i class='fa-solid fa-volume-xmark'></i>";
   } else {
-    aud.play();
+    myAudio.play();
+    myButton.innerHTML = "<i class='fa-solid fa-volume-high'></i>";
   }
-  isPlaying = !isPlaying;
 }
+
+myAudio.onplaying = function () {
+  isPlaying = true;
+};
+myAudio.onpause = function () {
+  isPlaying = false;
+};
