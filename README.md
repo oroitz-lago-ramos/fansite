@@ -2,20 +2,21 @@
 ##Choses à faire:
     - [X] Refaire les cadres des sites et youtube :
         - https://www.youtube.com/watch?v=2ipVafDw2ss
+    - [X] Faire les autres page sousjacentes
+    - [X] Custom le scroll
+
 
     - [ ] Demander comment ajouter un autre fond (opt.)
     - [ ] Changer la tailles des cadres des sites
     - [ ] Rendre un peu plus responsive
-    - [ ] Custom le scroll?
-    - [ ] Faire les autres page sousjacentes
-    - [ ] Faire une page matos
+    - [ ] Faire une page matos (opt)
     - [ ] Revoir les fonts
-    - [ ] Sound effects on hover
     
     Ce que je n'arrive pas:
     - [ ] Changer les curseurs:
         - https://blog.logrocket.com/creating-custom-mouse-cursor-css/
         -bulles pour les sites
+    - [ ] Sound effects on hover
 
 ##Fontawesome cdn:
 <link
